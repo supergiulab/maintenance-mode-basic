@@ -13,4 +13,55 @@
  * Domain Path:       /languages
  */
 
- body { text-align: center; }
+/** Layout General Style  **/
+.min-100vh { min-height: 100vh; }
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    @extend .row;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 90%;
+    max-width: 50rem;
+}
+
+.cover {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/** Typography **/
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+h1, .h1,
+h2, .h2
+h3, .h3,
+h4, .h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2, .h2 { font-size: 1.8rem;; }
+h3, .h3 { font-size: 1.6rem; }
+h4, .h4 { font-size: 1.4rem; }
+
+/** Body and Main Content Layout **/
+body { margin: 0; padding: 0; }
+
+body, main,
+#main-content {
+    @extend .row;
+    @extend .min-100vh;
+}
+
+#main-content {
+    @extend .container;
+}
