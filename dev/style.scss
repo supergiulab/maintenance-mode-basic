@@ -32,6 +32,11 @@
     max-width: 50rem;
 }
 
+.cover-image {
+    background: url(https://placeimg.com/640/480/any) no-repeat center;
+    background-size: cover;
+}
+
 .cover {
     justify-content: center;
     align-items: center;
@@ -42,6 +47,7 @@
 body {
     font-family: sans-serif;
     font-size: 1rem;
+    color: $gray-dark;
 }
 
 h1, .h1,
@@ -72,4 +78,33 @@ body, main,
 
 #main-content {
     @extend .container;
+}
+
+
+/** Site Contact **/
+ul.site-contact {
+    margin: 1rem 0 0; padding: 0;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin: 0.25rem;
+
+        &, a {
+            overflow: hidden;
+            width: 2rem;
+            height: 2rem;
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        a {
+            display: inline-block;
+
+            span { text-indent: -9999px; }
+        }
+
+    }
 }
