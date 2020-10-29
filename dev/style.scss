@@ -33,14 +33,28 @@
 }
 
 .cover-image {
-    background: url(https://placeimg.com/640/480/any) no-repeat center;
+    position: relative;
+    background: url(https://placeimg.com/640/480/arch/sepia) no-repeat center;
     background-size: cover;
+
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: $secondary-light;
+        opacity: 0.3;
+    }
 }
 
 .cover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 1;
+
+    h1 { color: $primary-dark; }
 }
 
 /** Typography **/
@@ -63,9 +77,9 @@ h3, .h3 { font-size: 1.6rem; }
 h4, .h4 { font-size: 1.4rem; }
 
 /* Links */
-a { color: $primary; }
+a { color: $primary-dark; }
 a:visited { color: darken($secondary, 20%); }
-a:hover, a:focus { color: $primary-dark; }
+a:hover, a:focus { color: $primary; }
 
 /** Body and Main Content Layout **/
 body { margin: 0; padding: 0; }
@@ -78,6 +92,13 @@ body, main,
 
 #main-content {
     @extend .container;
+
+    .content {
+        padding: 1rem;
+        border-radius: 1px;
+        border: 1px solid rgba(245, 245, 245, 0.2);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 }
 
 
