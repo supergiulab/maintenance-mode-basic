@@ -1,14 +1,39 @@
+<?php
+/**
+ * Plugin Name:       Maintenance Mode Basic for WP
+ * Plugin URI:        
+ * Description:       Handle the basics maintenace mode with this plugin.
+ * Version:           1.0.0
+ * Requires at least: 5.2
+ * Requires PHP:      7.2
+ * Author:            SuPerGiu
+ * Author URI:        https://supergiulab.com
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       maintenance-mode-basic
+ * Domain Path:       /languages
+ */
+    /**
+        # Custom WP Maintenance page - /wp-content/maintenance.php
+            @source: https://www.hongkiat.com/blog/wordpress-maintenance/
+        
+        # Troubleshooting and issues
+            @source: https://kinsta.com/blog/wordpress-maintenance-mode/
+        
+        # Return http response 503 service unavailable.
+            This is important for SEO too!
+            @source: https://gist.github.com/timoleinio/5922427
+    */
+    $protocol = $_SERVER["SERVER_PROTOCOL"];
+    if ( 'HTTP/1.1' != $protocol && 'HTTP/1.0' != $protocol ) $protocol = 'HTTP/1.0';
+    // Send Apache Response - 503 (SEO)
+    header( "$protocol 503 Service Unavailable", true, 503 );
+    // Set Content Type and UTF-8
+    header( 'Content-Type: text/html; charset=utf-8' );
+    // Retry After - 10 minutes
+    header( 'Retry-After: 600' );
+?>
 <!DOCTYPE html>
-<!--
-    # Custom WP Maintenance page - /wp-content/maintenance.php
-         @source: https://www.hongkiat.com/blog/wordpress-maintenance/
-     
-    # Troubleshooting and issues
-         @source: https://kinsta.com/blog/wordpress-maintenance-mode/
-    
-    # Return http response 503 service unavailable. This is important for SEO too!
-          @source: https://gist.github.com/timoleinio/5922427
--->
 <html lang="it">
 <head>
     <meta charset="UTF-8">
