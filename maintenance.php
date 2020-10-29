@@ -1,7 +1,6 @@
 <?php
 /**
- * Plugin Name:       Maintenance Mode Basic for WP
- * Plugin URI:        
+ * File Name:         Maintenance Mode Basic for WP
  * Description:       Handle the basics maintenace mode with this plugin.
  * Version:           1.0.0
  * Requires at least: 5.2
