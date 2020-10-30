@@ -37,7 +37,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito in Manutenzione</title>
+    <title>Panoramini - Sito in Manutenzione</title>
 
     <!-- Style -->
     <link rel="stylesheet" href="./assets/style.min.css">
@@ -65,7 +65,7 @@
                     // A wizard to generate this code is at http://www.jottings.com/obfuscator/
                     for(coded="7S@haeSBCjawiZ.1U7",key="92QiENVRor06FSh45ykPWjqXMmUBcuYn3gdLIlTpJbD78O1afxGCAtvwKesZzH",shift=coded.length,link="",i=0;i<coded.length;i++)-1==key.indexOf(coded.charAt(i))?(ltr=coded.charAt(i),link+=ltr):(ltr=(key.indexOf(coded.charAt(i))-shift+key.length)%key.length,link+=key.charAt(ltr));document.write("<a href='mailto:"+link+"'><i class=\"fas fa-at\"></i><span>Scrivi una email</span></a>");
                     //-->
-                    </script><noscript>Sorry, you need Javascript on to email me.</noscript>
+                    </script><noscript>Magari non vorresti ma devi abilitare Javascript per usare questo link.</noscript>
                     </li>
                     <li><a href="https://www.facebook.com/" title="Scrivi un messaggio su Facebook"><i class="fab fa-facebook"></i><span>Scrivi un messaggio su Facebook</span></a></li>
                 </ul>
