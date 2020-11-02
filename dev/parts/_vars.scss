@@ -6,12 +6,8 @@ Default Variables for Maintenace Mode Basic
 
 // Colours
 // @source: https://material.io/resources/color/
-$primary: #ba68c8;
-$primary-light: #ee98fb;
-$primary-dark: #883997;
+$primary: #92acd1;
+$primary-light: lighten($primary, 20%);
+$primary-dark: darken($primary, 20%);
 
-$secondary: #ccff90;
-$secondary-light: #dff8b7;
-$secondary-dark: #99cc60;
-
-$gray-dark: #222;
+$gray-dark: #403f3f;
