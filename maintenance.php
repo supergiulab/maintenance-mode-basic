@@ -63,11 +63,11 @@
                     // Random encryption key feature coded by Andrew Moulden
                     // This code is freeware provided these four comment lines remain intact
                     // A wizard to generate this code is at http://www.jottings.com/obfuscator/
-                    for(coded="7S@haeSBCjawiZ.1U7",key="92QiENVRor06FSh45ykPWjqXMmUBcuYn3gdLIlTpJbD78O1afxGCAtvwKesZzH",shift=coded.length,link="",i=0;i<coded.length;i++)-1==key.indexOf(coded.charAt(i))?(ltr=coded.charAt(i),link+=ltr):(ltr=(key.indexOf(coded.charAt(i))-shift+key.length)%key.length,link+=key.charAt(ltr));document.write("<a href='mailto:"+link+"'><i class=\"fas fa-at\"></i><span>Scrivi una email</span></a>");
+                    for(coded = "fON5FOrpNp@KrOpL.25r",key = "NRjMsWglYiSDuT2b9GFzVJH1BdKLAp4hotCq6UEImanQ0wx87fXy53ekcvZPrO",shift=coded.length,link="",i=0;i<coded.length;i++)-1==key.indexOf(coded.charAt(i))?(ltr=coded.charAt(i),link+=ltr):(ltr=(key.indexOf(coded.charAt(i))-shift+key.length)%key.length,link+=key.charAt(ltr));document.write("<a href='mailto:"+link+"'><i class=\"fas fa-at\"></i><span>Scrivi una email</span></a>");
                     //-->
                     </script><noscript>Magari non vorresti ma devi abilitare Javascript per usare questo link.</noscript>
                     </li>
-                    <li><a href="https://www.facebook.com/" title="Scrivi un messaggio su Facebook"><i class="fab fa-facebook"></i><span>Scrivi un messaggio su Facebook</span></a></li>
+                    <li><a href="https://www.facebook.com/panoramini.panoramini.7" title="Scrivi un messaggio su Facebook"><i class="fab fa-facebook"></i><span>Scrivi un messaggio su Facebook</span></a></li>
                 </ul>
             </div>
         </div>
